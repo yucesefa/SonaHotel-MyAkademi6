@@ -1,6 +1,6 @@
 ﻿namespace RapidApiProject.Models
 {
-    public class SearchViewModel
+    public class BookingSearchViewModel
     {
         public string destID { get; set; }
         public string cityName { get; set; }
