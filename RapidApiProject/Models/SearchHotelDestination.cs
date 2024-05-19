@@ -1,6 +1,6 @@
 ﻿namespace RapidApiProject.Models
 {
-    public class GetCityIdViewModel
+    public class SearchHotelDestination
     {
         public Data[] data { get; set; }
 

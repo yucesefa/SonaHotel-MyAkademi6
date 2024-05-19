@@ -1,6 +1,6 @@
 ﻿namespace RapidApiProject.Models
 {
-    public class ListViewModel
+    public class HotelListViewModel
     {
         public Data data { get; set; }
 

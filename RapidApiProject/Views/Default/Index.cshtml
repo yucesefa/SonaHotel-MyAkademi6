@@ -1,4 +1,4 @@
-﻿@model BookingSearchViewModel
+﻿@model HotelSearchViewModel
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_UILayout.cshtml";
@@ -9,18 +9,17 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="hero-text">
-                    <h1>Sona Lüks Oteller</h1>
+                    <h1>Sona Luxury Hotels</h1>
                     <p>
-                        İşte uluslararası öneriler de dahil olmak üzere en iyi otel rezervasyon siteleri
-                        seyahat etmek ve düşük fiyatlı otel odaları bulmak için.
+                       Here are the best hotel booking sites,including recommendations for international travel and for finding low-priced hotel rooms.
                     </p>
-                    <a href="#" class="primary-btn">Şİmdİ Keşfet</a>
+                    <a href="#" class="primary-btn">Discover Now</a>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
                 <div class="booking-form">
                     <h3>
-                        Otel Rezervasyonu
+                        Booking Your Hotel
                     </h3>
 
 
@@ -28,41 +27,41 @@
                     <form action="GetSearchList" method="post">
                         <div class="check-date">
 
-                            <label for="date-in">Şehir:</label>
+                            <label for="date-in">Location:</label>
                             <input type="text" asp-for="cityName">
                         </div>
                         <div class="check-date">
-                            <label for="date-in">Giriş:</label>
+                            <label for="date-in">Check In:</label>
                             <input type="text" class="date-input" asp-for="arrivalDate">
                             <i class="icon_calendar"></i>
                         </div>
 
                         <div class="check-date">
-                            <label for="date-out">Çıkış:</label>
+                            <label for="date-out">Check Out:</label>
                             <input type="text" class="date-input" asp-for="departureDate">
                             <i class="icon_calendar"></i>
                         </div>
                         <div class="select-option">
-                            <label for="guest">Misafirler:</label>
+                            <label for="guest">Guest:</label>
                             <select asp-for="adultCount">
-                                <option value="1">1 Yetişkin</option>
-                                <option value="2">2 Yetişkin</option>
-                                <option value="3">3 Yetişkin</option>
-                                <option value="4">4 Yetişkin</option>
-                                <option value="5">5 Yetişkin</option>
+                                <option value="1">1 Adult</option>
+                                <option value="2">2 Adult</option>
+                                <option value="3">3 Adult</option>
+                                <option value="4">4 Adult</option>
+                                <option value="5">5 Adult</option>
                             </select>
                         </div>
                         <div class="select-option">
-                            <label for="room">Oda:</label>
+                            <label for="room">Room:</label>
                             <select asp-for="roomCount">
-                                <option value="1">1 Oda</option>
-                                <option value="2">2 Oda</option>
-                                <option value="3">3 Oda</option>
-                                <option value="4">4 Oda</option>
+                                <option value="1">1 Room</option>
+                                <option value="2">2 Room</option>
+                                <option value="3">3 Room</option>
+                                <option value="4">4 Room</option>
                             </select>
                         </div>
                         <button type="submit">
-                            Otel Ara
+                           Check Availability
                         </button>
                     </form>
 
